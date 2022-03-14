@@ -3,13 +3,18 @@ import { LogInPage } from './pages/LoginPage';
 import { SignUpPage } from './pages/SignUpPage';
 import { UserInfoPage } from './pages/UserInfoPage';
 
+import { PrivateRoute } from './auth/PrivateRoute';
+
+
 export const Routes = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/" exact>
+                {/* Private routes to restricted pages */}
+                <PrivateRoute path="/" exact>
                     <UserInfoPage />
-                </Route>
+                </PrivateRoute>
+
                 <Route path='/login'>
                     <LogInPage />
                 </Route>
