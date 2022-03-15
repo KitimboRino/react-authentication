@@ -44,7 +44,7 @@ export const signUpRoute = {
             {
                 expiresIn: '2d',
             },
-            (err, tocken) => {
+            (err, token) => {
                 if (err) {
                     return res.status(500).send(err);
                 }
