@@ -66,3 +66,4 @@ export const SignUpPage = () => {
             </div >
         )
     }
+}
